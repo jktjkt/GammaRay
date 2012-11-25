@@ -101,6 +101,9 @@ set(gammaray_srcs
   tools/styleinspector/styleelementstatetablepage.cpp
   tools/styleinspector/complexcontrolmodel.cpp
   tools/styleinspector/dynamicproxystyle.cpp
+
+  remote/server.cpp
+  remote/remotemodelserver.cpp
 )
 
 if(WIN32 OR APPLE)
@@ -171,6 +174,7 @@ add_library(gammaray_probe
 target_link_libraries(gammaray_probe
   ${QT_QTCORE_LIBRARIES}
   ${QT_QTGUI_LIBRARIES}
+  ${QT_QTNETWORK_LIBRARIES}
 )
 if(NOT WIN32)
   target_link_libraries(gammaray_probe dl)

@@ -358,5 +358,6 @@ include(ExternalProject)
 add_subdirectory(include)
 add_subdirectory(tests)
 add_subdirectory(plugins)
+add_subdirectory(client)
 
 macro_display_feature_log()
