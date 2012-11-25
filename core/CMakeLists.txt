@@ -175,6 +175,7 @@ target_link_libraries(gammaray_probe
   ${QT_QTCORE_LIBRARIES}
   ${QT_QTGUI_LIBRARIES}
   ${QT_QTNETWORK_LIBRARIES}
+  gammaray_network
 )
 if(NOT WIN32)
   target_link_libraries(gammaray_probe dl)
